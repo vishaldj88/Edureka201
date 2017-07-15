@@ -1,0 +1,17 @@
+{
+  "name": "quoteapplication",
+  "version": "1.0.0",
+  "description": "Edureka assignment by vishal",
+  "main": "app.js",
+  "scripts": {
+    "test": "run"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Vishal.doijode@mindtree.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

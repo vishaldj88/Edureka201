@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Application</title>
+   
+    <style>
+        body { padding-top:50px; background-color:blueviolet}
+        h1 { text-align: center;color: #00ff00;}
+         #divDisplay { 
+             padding-top:80px;
+             font-style:italic;
+             font-family:'Times New Roman';
+             text-align:center;
+              color: #00ff00;
+              font-size: 2em;
+              }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 style="font-style:italic;font-family:'Times New Roman', Times, serif"> Quote of the day</h1>
+
+            <div id="divDisplay"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        var qouteArray =new Array("“Face reality as it is, not as it was or as you wish it to be.” <br>– Jack Welch",
+"“Any woman who understands the problems of running a home will be nearer to understand the problems of running a country.” <br>– Margaret Thatcher",
+"“The nation will find it very hard to look up to the leaders who are keeping their ears to the ground.”<br> – Sir Winston Churchill",
+"“He who has never learned to obey cannot be a good commander.”<br> – Aristotle",
+"“The best executive is the one who has sense enough to pick good men to do what he wants done, and self-restraint enough to keep from meddling with them while they do it.”<br> – Theodore Roosevelt",
+"“Men make history and not the other way around. In periods where there is no leadership, society stands still. Progress occurs when courageous, skillful leaders seize the opportunity to change things for the better.”<br>– Harry S. Truman",
+"“Focus your life solely on making a buck shows a certain poverty of ambition. It asks too little life of yourself. Because it’s only when you hitch your wagon to something larger than yourself that you realize your true potential.” <br>– Barack Obama",
+"“I began revolution with 82 men. If I had to do it again, I do it with 10 or 15 and absolute faith. It does not matter how small you are if you have faith and plan of action.” <br>– Fidel Castro",
+"“The human voice can never reach the distance that is covered by the still, small voice of conscience.” <br>– Mahatma Gandhi",
+" “He who has never learned to obey cannot be a good commander.” <br>– Aristotle-2");
+  
+ setInterval(function(){
+      var i = Math.floor(Math.random()*10);
+      document.getElementById("divDisplay").innerHTML=qouteArray[i];
+},4000);
+
+    </script>
+</body>
+</html>
